@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i think...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ok/styles-main.css">
+</head>
+<body>
+    <div id="canvasContainer">
+        <canvas id="c"></canvas>
+    </div>
+
+    <div class="main-content">
+        <div id="infoContainer">
+            <div class="info-content">
+                <div class="info-label">Name/Alias:</div>
+                <div class="info-value">~ meovv</div>
+
+                <div class="info-label">Hobbies:</div>
+                <div class="info-value">~ nothing</div>
+
+                <div class="info-label">Social Media:</div>
+                <div class="social-links">
+                    <a href="https://steamcommunity.com/id/murmurmeovvmeovv/" target="_blank">steam •</a>
+                    <a href="https://open.spotify.com/user/316oodzfk7jyzqr5tcfl6rzdmwsq?si=774078b0bbec4468" target="_blank">spotify •</a>
+                    <a href="https://pin.it/23zUzVk4O" target="_blank">pinterest •</a>
+                    <a href="https://x.com/aka_kiyurae?s=21" target="_blank">x(twitter)</a>
+                </div>
+
+                <div class="quote">
+                    "Makna kehidupan adalah bahawa ia mempunyai pengakhiran."<br>
+                    — Franz Kafka
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section">
+            <div class="gallery-title">ГАЛЕРЕЯ</div>
+            
+            <div class="gallery-container" id="galleryContainer">
+                <div class="placeholder">Добавьте изображения</div>
+                <img class="gallery-image active" src="img/12.jpg" alt="Gallery image 1">
+                <img class="gallery-image" src="img/10.jpg" alt="Gallery image 2">
+                <img class="gallery-image" src="img/8.JPG" alt="Gallery image 3">
+                <img class="gallery-image" src="img/1.JPEG" alt="Gallery image 4">
+                <img class="gallery-image" src="img/4.JPG" alt="Gallery image 5">
+                <img class="gallery-image" src="img/5.JPG" alt="Gallery image 6">
+                <img class="gallery-image" src="img/3.JPG" alt="Gallery image 7">
+                <img class="gallery-image" src="img/2.JPG" alt="Gallery image 8">
+                <img class="gallery-image" src="img/9.JPG" alt="Gallery image 9">
+                <img class="gallery-image" src="img/11.JPG" alt="Gallery image 10">
+                <img class="gallery-image" src="img/6.JPG" alt="Gallery image 11">
+                <img class="gallery-image" src="img/7.JPG" alt="Gallery image 12">
+            </div>
+
+            <div class="gallery-counter">
+                <span id="currentImage">1</span> / <span id="totalImages">12</span>
+            </div>
+
+            <div class="gallery-controls">
+                <button onclick="previousImage()">←</button>
+                <button onclick="nextImage()">→</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="player-section">
+        <div class="player-title">🎵 ПЛЕЕР</div>
+        <div class="track-name" id="currentTrackName">Track 1</div>
+        
+        <div class="player-controls">
+            <button onclick="previousTrack()">⏮</button>
+            <button onclick="togglePlay()" id="playButton">▶</button>
+            <button onclick="nextTrack()">⏭</button>
+        </div>
+        
+        <div id="currentTrackIndex">1 / 6</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="ok/src/canvas-logo.js"></script>
+    <script src="ok/src/gallery.js"></script>
+    <script src="ok/src/player.js"></script>
+</body>
+</html>

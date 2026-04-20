@@ -1,0 +1,55 @@
+/* ══════════════════════════════════════════════════════
+   Music Player Component Styles
+   ══════════════════════════════════════════════════════ */
+
+.player-section {
+    border: 3px solid #000000;
+    background: #000000;
+    padding: 15px;
+    width: 500px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-title {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+    min-height: 0;
+    display: none;
+}
+
+.track-name {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.player-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-controls button {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.player-controls button:hover {
+    background: #cccccc;
+    transform: scale(1.05);
+}
+
+#currentTrackIndex {
+    color: #ffffff;
+    font-size: 11px;
+    margin-top: 10px;
+}
