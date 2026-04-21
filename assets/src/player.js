@@ -3,6 +3,7 @@
 // ══════════════════════════════════════════════════════
 
 const tracks = [
+    { name: 'Astrale - How To Observe', url: './audio/How_To_Observe.mp3' },
     { name: 'Bladee - egobaby', url: './audio/egobaby.mp3' },
     { name: 'Singto Conley - Nagisa', url: './audio/Nagisa.mp3' },
     { name: 'Lovesicxo - Breaking The Code', url: './audio/004.mp3' },
