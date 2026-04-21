@@ -1,0 +1,74 @@
+/* ══════════════════════════════════════════════════════
+   Gallery Component Styles
+   ══════════════════════════════════════════════════════ */
+
+.gallery-section {
+    border: 3px solid #000000;
+    background: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 360px;
+    margin-top: 0;
+}
+
+.gallery-title {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border: 3px solid #000000;
+    background: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.gallery-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.gallery-image.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.gallery-counter {
+    color: #ffffff;
+    font-size: 10px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.gallery-controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.gallery-section button {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}

@@ -1,0 +1,10 @@
+/* ══════════════════════════════════════════════════════
+   Layout & Grid Styles
+   ══════════════════════════════════════════════════════ */
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+/* ══════════════════════════════════════════════════════
+   Canvas Component Styles
+   ══════════════════════════════════════════════════════ */
+
+#canvasContainer {
+    border: 3px solid #000000;
+    background: #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+canvas {
+    display: block;
+    image-rendering: pixelated;
+}
