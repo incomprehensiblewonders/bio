@@ -70,3 +70,9 @@ window.togglePlay = function() {
 audio.src = tracks[currentTrackIndex].url;
 loadedTrackIndex = currentTrackIndex;
 updateTrackDisplay();
+
+// Автоматическое переключение на следующий трек при окончании текущего
+audio.addEventListener('ended', function() {
+    window.nextTrack();
+    audio.play();
+});
