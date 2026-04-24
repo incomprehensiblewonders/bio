@@ -1,6 +1,4 @@
-// ══════════════════════════════════════════════════════
 // Image Gallery Controller
-// ══════════════════════════════════════════════════════
 
 let currentIndex = 0;
 const images = document.querySelectorAll('.gallery-image');

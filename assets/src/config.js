@@ -1,6 +1,4 @@
-// ══════════════════════════════════════════════════════
 // Configuration & Constants
-// ══════════════════════════════════════════════════════
 
 // Canvas Settings
 export const CANVAS_CONFIG = {

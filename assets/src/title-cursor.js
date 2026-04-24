@@ -1,4 +1,5 @@
-// Мигающий курсор в заголовке браузера
+// Blinking cursor in browser title bar
+
 let showCursor = true;
 setInterval(() => {
     showCursor = !showCursor;

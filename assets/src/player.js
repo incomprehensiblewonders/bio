@@ -1,6 +1,4 @@
-// ══════════════════════════════════════════════════════
 // Audio Player Controller
-// ══════════════════════════════════════════════════════
 
 const tracks = [
     { name: 'Astrale - How To Observe', url: './audio/How_To_Observe.mp3' },
