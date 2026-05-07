@@ -18,7 +18,7 @@ function updateTrackDisplay() {
 
 function updatePlayButton() {
     const btn = document.getElementById('playButton');
-    btn.textContent = isPlaying ? '⏸ PAUSE' : '▶ PLAY';
+    btn.textContent = isPlaying ? '|| PAUSE' : '> PLAY';
 }
 
 window.nextTrack = function() {
@@ -58,12 +58,10 @@ window.togglePlay = function() {
     updatePlayButton();
 };
 
-// Initialize
 audio.src = tracks[currentTrackIndex].url;
 loadedTrackIndex = currentTrackIndex;
 updateTrackDisplay();
 
-// Автоматическое переключение на следующий трек при окончании текущего
 audio.addEventListener('ended', function() {
     window.nextTrack();
     audio.play();
