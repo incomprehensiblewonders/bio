@@ -1,14 +1,7 @@
 // Audio Player Controller
 
 const tracks = [
-    { name: 'Astrale - How To Observe', url: './audio/How_To_Observe.mp3' },
-    // { name: 'Bladee - egobaby', url: './audio/egobaby.mp3' },
-    // { name: 'Singto Conley - Nagisa', url: './audio/Nagisa.mp3' },
-    // { name: 'Lovesicxo - Breaking The Code', url: './audio/004.mp3' },
-    // { name: 'Cloudier - A Centimetre Apart', url: './audio/A_Centimetre_Apart.mp3' },
-    // { name: 'pichu - stand out ft. blackwinterwells', url: './audio/stand_out.mp3' },
-    // { name: 'blindboy, Sofuu, mididuck - Hold On', url: './audio/Hold_On.mp3' },
-    // { name: 'Bladee - I Think', url: './audio/I_Think.mp3' },
+    { name: 'Astrale - How To Observe', url: './audio/How_To_Observe.mp3' }
 ];
 
 let currentTrackIndex = 0;
