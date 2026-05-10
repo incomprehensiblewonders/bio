@@ -1,6 +1,6 @@
 // Canvas Logo Renderer
 
-const B = 10;
+const B = 8;
 const CW = 7 * B;
 const CH = 8 * B;
 const SEP = B;
