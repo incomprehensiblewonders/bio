@@ -1,14 +1,42 @@
 // Custom Cursor - Replace mouse cursor with PNG image
 
-// Disable custom cursor on mobile devices
-const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-if (isMobile) {
-    // Don't apply custom cursor on mobile
+// Detect mobile devices - more robust detection
+const isMobile = () => {
+    // User agent detection
+    const userAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    // Touch capability detection
+    const hasTouch = () => {
+        return (('ontouchstart' in window) ||
+                (navigator.maxTouchPoints > 0) ||
+                (navigator.msMaxTouchPoints > 0));
+    };
+    
+    // Screen size detection (mobile typically < 768px width)
+    const smallScreen = window.innerWidth < 768;
+    
+    return userAgent || (hasTouch() && smallScreen);
+};
+
+const isMobileDevice = isMobile();
+
+if (isMobileDevice) {
+    // Completely disable custom cursor on mobile and show default
+    const mobileStyle = document.createElement('style');
+    mobileStyle.textContent = `
+        * {
+            cursor: auto !important;
+        }
+        #customCursor {
+            display: none !important;
+        }
+    `;
+    document.head.appendChild(mobileStyle);
     document.documentElement.style.cursor = 'auto';
     document.body.style.cursor = 'auto';
 }
 
-if (!isMobile) {
+if (!isMobileDevice) {
     const cursor = document.createElement('div');
     cursor.id = 'customCursor';
 
