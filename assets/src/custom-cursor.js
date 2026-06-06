@@ -1,6 +1,16 @@
 // Custom Cursor - Replace mouse cursor with PNG image
-const cursor = document.createElement('div');
-cursor.id = 'customCursor';
+
+// Disable custom cursor on mobile devices
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+if (isMobile) {
+    // Don't apply custom cursor on mobile
+    document.documentElement.style.cursor = 'auto';
+    document.body.style.cursor = 'auto';
+}
+
+if (!isMobile) {
+    const cursor = document.createElement('div');
+    cursor.id = 'customCursor';
 
 // Get the correct path relative to the HTML file
 const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
@@ -52,3 +62,4 @@ document.addEventListener('mouseenter', () => {
 document.addEventListener('mouseleave', () => {
     cursor.style.opacity = '0';
 });
+}
