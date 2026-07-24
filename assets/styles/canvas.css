@@ -1,8 +1,8 @@
 /* Canvas Component Styles */
 
 #canvasContainer {
-    border: 3px solid #000000;
-    background: #000000;
+    border: 3px solid #ffffff;
+    background: #ffffff;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@ canvas {
 
 .ascii-art {
     font-family: 'Courier New', monospace;
-    color: #fff;
+    color: #000000;
     font-size: 21px;
     line-height: 1;
     margin: 0;
@@ -25,4 +25,5 @@ canvas {
     white-space: pre;
     letter-spacing: -2px;
     opacity: 1;
+    filter: contrast(220%);
 }

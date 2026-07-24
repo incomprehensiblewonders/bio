@@ -1,8 +1,8 @@
 /* Info/Profile Container Styles */
 
 #infoContainer {
-    border: 3px solid #000000;
-    background: #000000;
+    border: 3px solid #ffffff;
+    background: #ffffff;
     padding: 20px;
     width: 450px;
     height: 360px;
@@ -26,19 +26,23 @@
 }
 
 .info-label {
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 12px 0;
     padding: 0;
     text-align: center;
     font-size: 18px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'Courier Prime', monospace;
 }
 
+.info-label a {
+    color: #000000;
+    text-decoration: none;
+}
+
 .info-value {
-    color: #929292;
+    color: #555555;
     margin: 0;
     margin-top: 8px;
     margin-bottom: 27px;
@@ -70,20 +74,51 @@
     color: #cccccc;
 }
 
+.social-links.vertical {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    gap: 1px;
+}
+
+.social-links.vertical a {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+
+.link-button {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 28px;
+    padding: 10px 16px;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+}
+
+.link-button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
 .quote {
-    color: #afafaf;
+    color: #555555;
     font-size: 14px;
-    font-style: italic;
     margin: 0;
     padding: 8px 0 0 0;
-    border-top: 2px solid #000000;
+    border-top: 2px solid #ffffff;
     text-align: center;
     line-height: 1.3;
 }
 
 .separator {
-    color: #ffffff;
-    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
     margin: 15px 0;
     padding: 0;
     text-align: center;
@@ -120,4 +155,13 @@
     padding: 0;
     justify-content: center;
     align-items: center;
+}
+
+/* Position for bottom center "Now Playing" label */
+#nowPlaying {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+    z-index: 0;
 }

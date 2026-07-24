@@ -1,5 +1,3 @@
-// Splash Screen Management
-
 document.addEventListener('DOMContentLoaded', function() {
     const splashScreen = document.getElementById('splashScreen');
     const backgroundMusic = document.getElementById('backgroundMusic');
