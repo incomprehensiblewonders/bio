@@ -1,5 +1,3 @@
-// Image Gallery Controller
-
 let currentIndex = 0;
 const images = document.querySelectorAll('.gallery-image');
 const totalImages = images.length;
@@ -18,11 +16,9 @@ function updateGallery() {
 }
 
 function startAutoSlide() {
-    // Очищаем старый таймер если он есть
     if (autoSlideTimer) {
         clearInterval(autoSlideTimer);
     }
-    // Запускаем новый таймер
     autoSlideTimer = setInterval(() => {
         currentIndex = (currentIndex + 1) % totalImages;
         updateGallery();
@@ -32,13 +28,13 @@ function startAutoSlide() {
 window.nextImage = function() {
     currentIndex = (currentIndex + 1) % totalImages;
     updateGallery();
-    startAutoSlide(); // Сбрасываем таймер
+    startAutoSlide();
 };
 
 window.previousImage = function() {
     currentIndex = (currentIndex - 1 + totalImages) % totalImages;
     updateGallery();
-    startAutoSlide(); // Сбрасываем таймер
+    startAutoSlide();
 };
 
 document.addEventListener('keydown', (e) => {

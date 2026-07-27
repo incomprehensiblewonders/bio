@@ -1,5 +1,3 @@
-// ASCII Art Flicker Effect
-
 const asciiArt = document.getElementById('asciiArt');
 
 let lastFlickerEventTime = 0;

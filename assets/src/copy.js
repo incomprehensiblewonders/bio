@@ -1,4 +1,3 @@
-// Simple clipboard copy for elements with `data-copy` attribute
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-copy]').forEach(el => {
         el.style.cursor = 'pointer';

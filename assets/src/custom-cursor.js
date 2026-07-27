@@ -1,18 +1,12 @@
-// Custom Cursor - Replace mouse cursor with PNG image
-
-// Detect mobile devices - more robust detection
 const isMobile = () => {
-    // User agent detection
     const userAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
-    // Touch capability detection
     const hasTouch = () => {
         return (('ontouchstart' in window) ||
                 (navigator.maxTouchPoints > 0) ||
                 (navigator.msMaxTouchPoints > 0));
     };
     
-    // Screen size detection (mobile typically < 768px width)
     const smallScreen = window.innerWidth < 768;
     
     return userAgent || (hasTouch() && smallScreen);
@@ -21,7 +15,6 @@ const isMobile = () => {
 const isMobileDevice = isMobile();
 
 if (isMobileDevice) {
-    // Completely disable custom cursor on mobile and show default
     const mobileStyle = document.createElement('style');
     mobileStyle.textContent = `
         * {
@@ -40,7 +33,6 @@ if (!isMobileDevice) {
     const cursor = document.createElement('div');
     cursor.id = 'customCursor';
 
-// Get the correct path relative to the HTML file
 const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
 const cursorPath = baseUrl + '/assets/src/cursor.png';
 cursor.style.backgroundImage = `url('${cursorPath}')`;
@@ -66,7 +58,6 @@ cursorStyle.textContent = `
 `;
 document.head.appendChild(cursorStyle);
 
-// Hide default cursor everywhere
 document.body.style.cursor = 'none';
 document.documentElement.style.cursor = 'none';
 
@@ -81,12 +72,10 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = mouseY + 'px';
 });
 
-// Show cursor when entering window
 document.addEventListener('mouseenter', () => {
     cursor.style.opacity = '1';
 });
 
-// Hide cursor when leaving window
 document.addEventListener('mouseleave', () => {
     cursor.style.opacity = '0';
 });
