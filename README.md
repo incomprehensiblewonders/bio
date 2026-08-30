@@ -1,2 +1,2 @@
 # Bio
-incomprehensiblewonders.github.io/bio
+ssehaxd.github.io/bio
