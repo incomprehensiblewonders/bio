@@ -171,7 +171,6 @@
     align-items: center;
 }
 
-/* Position for bottom center "Now Playing" label */
 #nowPlaying {
     position: fixed;
     left: 50%;

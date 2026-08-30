@@ -34,7 +34,7 @@ if (!isMobileDevice) {
     cursor.id = 'customCursor';
 
 const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
-const cursorPath = baseUrl + '/assets/src/cursor.png';
+const cursorPath = baseUrl + '/assets/src/плавающаяпизда.png';
 cursor.style.backgroundImage = `url('${cursorPath}')`;
 cursor.style.backgroundSize = 'contain';
 cursor.style.backgroundRepeat = 'no-repeat';

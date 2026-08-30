@@ -30,10 +30,10 @@
 
 .splash-text {
     font-family: 'Press Start 2P', cursive;
-    font-size: 24px;
+    font-size: clamp(12px, 1.2vw, 18px);
     color: #000000;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     animation: blink 1.5s infinite;
 }
 
